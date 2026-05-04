@@ -273,7 +273,6 @@ footer {
     height: 150%;
     left: -3%;
     top: 0;
-
 }
 
 .people {
@@ -1227,3 +1226,481 @@ footer .footerBtn div span {
     }
 }
 
+
+/* ==============================
+   Responsive Fixes - KUDZOKA
+   Additions to be more responsive 
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+.section1,
+.section2,
+.section3,
+footer {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    nav {
+        padding: 20px 35px 0;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 8px 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        margin: 0 4px;
+    }
+
+    nav img {
+        width: 95px;
+    }
+
+    .firstDiv {
+        padding: 20px 35px 0;
+        top: 25px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .divText {
+        padding-top: 40px;
+    }
+
+    .divImgs .cloud {
+        top: auto;
+        bottom: 0;
+    }
+
+    .section2 {
+        height: auto;
+        min-height: auto;
+        padding: 80px 35px 40px;
+    }
+
+    .sec2ground {
+        display: none;
+    }
+
+    .threedivs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        align-items: start;
+    }
+
+    .threedivs .div1,
+    .threedivs .div2,
+    .threedivs .div3 {
+        position: static;
+        width: 100%;
+    }
+
+    .threedivs div p {
+        width: auto;
+    }
+
+    .div4 {
+        position: static;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section3 {
+        margin: 0;
+        padding: 50px 35px;
+        gap: 20px;
+    }
+
+    .mainDiv h3,
+    .mainDiv p {
+        margin-left: 0;
+    }
+
+    footer {
+        height: 420px;
+    }
+
+    .bgfooter {
+        width: 130%;
+        left: -12%;
+    }
+
+    footer .footertext {
+        top: auto;
+        bottom: 35px;
+        left: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+        text-align: center;
+        padding: 18px 18px 0;
+    }
+
+    nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li:first-child {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    nav .section1_btn2 {
+        display: none;
+    }
+
+    .section1_img1 {
+        height: 620px;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    .firstDiv {
+        flex-direction: column;
+        padding: 20px 20px 0;
+        text-align: center;
+        top: 10px;
+    }
+
+    .divText,
+    .divImgs {
+        width: 100%;
+    }
+
+    .divText {
+        padding-top: 25px;
+    }
+
+    .divText h3 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .divText p {
+        font-size: 17px;
+        line-height: 1.6;
+        max-width: 500px;
+        margin: 15px auto 0;
+    }
+
+    .divImgs {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .waves {
+        width: 130%;
+        top: 88%;
+        left: -45%;
+    }
+
+    .section2 {
+        padding: 100px 20px 35px;
+    }
+
+    .threedivs {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .threedivs div img {
+        width: 160px;
+    }
+
+    .threedivs div h3 {
+        font-size: 22px;
+        margin-top: 8px;
+    }
+
+    .threedivs div p {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 360px;
+        margin: 8px auto 0;
+    }
+
+    .div4all img {
+        width: 260px;
+    }
+
+    .div4all div p {
+        font-size: 18px;
+    }
+
+    .div4all div h3 {
+        font-size: 34px;
+    }
+
+    .section3 {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .section3 .smallImg {
+        width: 150px;
+    }
+
+    .section3 .mainImg {
+        width: 260px;
+        height: auto;
+    }
+
+    .mainDiv {
+        padding: 0;
+    }
+
+    .mainDiv h3 {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .mainDiv p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    footer {
+        height: auto;
+        min-height: 380px;
+        padding: 190px 20px 30px;
+        background: linear-gradient(135deg, #7a3d8a, #b45bd3);
+        overflow: hidden;
+    }
+
+    .bgfooter {
+        display: none;
+    }
+
+    .people {
+        display: none;
+    }
+
+    footer .footertext {
+        position: static;
+        text-align: center;
+    }
+
+    .App {
+        display: flex !important;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .socialimgs {
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    footer ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    footer ul li a {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    nav img {
+        width: 85px;
+    }
+
+    .section1_img1 {
+        height: 570px;
+    }
+
+    .divText h3 {
+        font-size: 28px;
+    }
+
+    .divText p {
+        font-size: 15px;
+    }
+
+    .divImgs {
+        max-width: 330px;
+    }
+
+    .waves {
+        top: 92%;
+    }
+
+    .section2 {
+        padding-top: 85px;
+    }
+
+    .threedivs div img {
+        width: 135px;
+    }
+
+    .threedivs div h3 {
+        font-size: 20px;
+    }
+
+    .threedivs div p {
+        font-size: 14px;
+    }
+
+    .div4all img {
+        width: 230px;
+    }
+
+    .section3 .smallImg {
+        width: 120px;
+    }
+
+    .section3 .mainImg {
+        width: 220px;
+    }
+
+    footer {
+        padding-top: 120px;
+        min-height: 340px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .divText h3 {
+        font-size: 24px;
+    }
+
+    .divText p {
+        font-size: 14px;
+    }
+
+    .divImgs {
+        max-width: 280px;
+    }
+
+    footer ul li a {
+        font-size: 14px;
+    }
+}
+
+/* Login button fix footer icons only */
+
+@media (max-width: 992px) {
+  nav .section1_btn2 {
+    display: block !important;
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 9999 !important;
+  }
+
+  nav .section1_btn2 img {
+    width: 90px !important;
+    height: 35px !important;
+  }
+
+  nav .section1_btn2 span {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .section1_btn2 {
+    top: 12px !important;
+    right: 10px !important;
+  }
+
+  nav .section1_btn2 img {
+    width: 75px !important;
+    height: 30px !important;
+  }
+
+  nav .section1_btn2 span {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .section1_btn2 {
+    top: 10px !important;
+    right: 8px !important;
+  }
+
+  nav .section1_btn2 img {
+    width: 65px !important;
+    height: 25px !important;
+  }
+
+  nav .section1_btn2 span {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  nav .section1_btn2 {
+    top: 8px !important;
+    right: 5px !important;
+  }
+
+  nav .section1_btn2 img {
+    width: 55px !important;
+    height: 22px !important;
+  }
+
+  nav .section1_btn2 span {
+    font-size: 9px !important;
+  }
+}
+footer .footerBtn div {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-60%);
+    display: flex;
+    align-items: center;
+}
