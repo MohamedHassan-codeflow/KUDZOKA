@@ -125,14 +125,14 @@ nav .section1_btn2 span {
     position: absolute;
     width: 45%;
     left: 20%;
-    top: 20px;
+    top: 30px;
 }
 
 .divImgs .cloud {
     position: absolute;
     width: 60%;
     left: 15%;
-    top: 410px;
+    top: 350px;
 }
 
 .waves {
@@ -448,6 +448,20 @@ footer .footerBtn div span {
     footer {
         height: 70vh;
     }
+.divImgs .man {
+    position: absolute;
+    width: 45%;
+    left: 20%;
+    top: 30px;
+}
+
+.divImgs .cloud {
+    position: absolute;
+    width: 60%;
+    left: 15%;
+    top: 250px;
+}
+
 }
 
 @media only screen and (max-width:1300px) {
@@ -456,6 +470,7 @@ footer .footerBtn div span {
     .right {
         display: none;
     }
+
 }
 
 @media only screen and (max-width:992px) {
@@ -522,6 +537,20 @@ footer .footerBtn div span {
     .socialimgs {
         margin-top: 5px;
     }
+.divImgs .man {
+    position: absolute;
+    width: 45%;
+    left: 20%;
+    top: 30px;
+}
+
+.divImgs .cloud {
+    position: absolute;
+    width: 60%;
+    left: 15%;
+    top: 350px;
+}
+
 }
 
 @media only screen and (max-width:993px) {
@@ -529,6 +558,19 @@ footer .footerBtn div span {
     .App {
         display: none;
     }  
+.divImgs .man {
+    position: absolute;
+    width: 45%;
+    left: 20%;
+    top: 30px;
+}
+
+.divImgs .cloud {
+    position: absolute;
+    width: 60%;
+    left: 15%;
+    top: 350px;
+}
 
 }
 
@@ -1623,7 +1665,7 @@ footer {
     }
 }
 
-/* Login button fix footer icons only */
+/* fix Login button and footer icons only */
 
 @media (max-width: 992px) {
   nav .section1_btn2 {
