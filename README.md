@@ -5,7 +5,7 @@ The project focuses on delivering a clean user interface, smooth animations, res
 
 ## 🌐 Live Demo
 
-👉 kudzoka-six-mu.vercel.app
+👉 https://kudzoka-six-mu.vercel.app
 
 ---
 
